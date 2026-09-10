@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tela de Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-container">
-        <div classe= "logo">
-            <div class="logo-simbolo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrCS9NHfTh1nHGGDxZ_ls2VGYPEWdNEpZa_Pr5bkLqYQ&s" alt="Logo" width="36" height="40"></div>
-            <div>
-                <span>Plataforma</span>
-                <strong> Aluno</strong>
-            </div>
-        </div>
-<h2>Entra na sua conta</h2>
-<form> <div class="input-group">
-     <label for="email">Email ou Usuario</label>
-        <br>
-        <input type="text" id="email" name="email" placeholder="Email ou Usuario" required><br><br>
-</div>
-       
 
-        <label for="senha">Senha</label>
-        <br>
-        <input type="password" id="senha" name="senha" placeholder="Senha" required><br><br>
-<div class="forgot">
-    <a href="*">Forgot Password?</a>
-</div>
-      <button type="submit" class="botao-entrar">Entrar</button>
-</form>
     <div class="cadastro">
-        <span>Não tem conta?</span>
-        <a href="*">Cadastre-se</a>
+        <h1>Criar sua conta</h1>
+        <p>Preencha os dados abaixo para se cadastrar.</p>
+
+        <form>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" placeholder="Digite seu nome completo">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+
+            <div class="linha">
+                <div>
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" id="data">
+                </div>
+
+                <div>
+                    <label for="genero">Gênero</label>
+                    <select id="genero">
+                        <option value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                        <option value="nao-informar">Prefiro não dizer</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="termos">
+                <input type="checkbox" id="termos">
+                <label for="termos">Aceito os termos de uso</label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
     </div>
-    </div>
 
-
-
-    
-    
-    
 </body>
 </html>
